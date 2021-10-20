@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Instruments </title>
+</head>
+<body>
+
+<h1>Instruments</h1>
+<ul>
+    {% for product in products %}
+        <li>{{ product }}</li>
+        {% if loop.index == 3 %}
+        <br>
+        {% endif %}
+    {% endfor %}
+    {{ dump (products) }}
+</ul>
+
+</body>
+</html
+
